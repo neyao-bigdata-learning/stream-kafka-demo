@@ -20,7 +20,7 @@ public class MyKafkaConsumerDemo {
     }
     public static void manualOffset() throws InterruptedException {
         Properties props = new Properties();
-        props.put("bootstrap.servers", "192.168.0.200:30021");
+        props.put("bootstrap.servers", "192.168.0.200:30022");
         props.put("group.id", "testgroup");
         props.put("enable.auto.commit", "false");
         props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
@@ -49,7 +49,7 @@ public class MyKafkaConsumerDemo {
 
     public static void autoOffset() throws InterruptedException {
         Properties props = new Properties();
-        props.put("bootstrap.servers", "192.168.0.200:30021");
+        props.put("bootstrap.servers", "192.168.0.200:30022");
         props.put("group.id", "consumer-group-test");
         props.put("enable.auto.commit", "true");
         props.put("auto.commit.interval.ms", "1000");
